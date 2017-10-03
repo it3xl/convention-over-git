@@ -7,7 +7,6 @@ Absolutely separate remote repositories will begin behave as a single remote rep
 
 This approach uses well-known Git tools. It is because Git has an innate ability to do this. All we need to add is some convention.
 
-[The main idea](http://blog.it3xl.com/2017/09/convention-over-git.html)
-Day-to-day use or How-to
-Cheat-sheet for implementation
-I'm preparing a working script that will be published on GitHub
+* [The main idea](http://blog.it3xl.com/2017/09/convention-over-git.html)
+* [Day-to-day use or How-to](http://blog.it3xl.com/search/label/git)
+* [Cheat-sheet for implementation](http://blog.it3xl.com/2017/09/convention-over-git-impl-cheat-sheet.html)
