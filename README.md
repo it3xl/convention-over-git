@@ -10,3 +10,6 @@ This approach uses well-known Git tools. It is because Git has an innate ability
 * [The main idea](http://blog.it3xl.com/2017/09/convention-over-git.html)
 * [Day-to-day use or How-to](http://blog.it3xl.com/search/label/git)
 * [Cheat-sheet for implementation](http://blog.it3xl.com/2017/09/convention-over-git-impl-cheat-sheet.html)
+
+Now I have logic scattered across many files and uses some extra stuff.
+I'm planning to prepare and publish here a light version till the end of the week.
