@@ -7,7 +7,7 @@ This project stores a ready-to-use implementation of Convention-over-Git.
 In a bash console navigate to the project's root folder and run<br/>
 $ ./convention-over-git.sh  your_repo_any_name
 
-Window user should run the script using the Git Bash (it comes with Git installation).
+Window user should run the script using the Git Bash (it comes with the Git installation).
 
 ## What is this all about!
 
