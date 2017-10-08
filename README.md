@@ -1,6 +1,15 @@
 # Convention-over-Git
 
-This project stores a simple, but ready-to-use implementation.
+This project stores a ready-to-use implementation of Convention-over-Git.
+
+## How to use
+
+In a bash console navigate to the project's root folder and run<br/>
+$ ./convention-over-git.sh  your_repo_any_name
+
+Window user should run the script using the Git Bash (it comes with Git installation).
+
+## What is this all about!
 
 Convention over Git is a straightforward approach for an automatic synchronization between Git remote repositories.
 Absolutely separate remote repositories will begin behave as a single remote repository.
