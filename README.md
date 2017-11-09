@@ -12,7 +12,7 @@ Also it includes some bug fixes and eternal struggle with a GitLab model of thin
 In a bash console navigate to the project's root folder and run<br/>
 $ ./convention-over-git.sh  your_repo_any_name
 
-*Window* users have to use Git Bash that comes with any Git installation.
+**Windows** users have to use Git Bash that comes with any Git installation.
 
 ## What is this all about!
 
