@@ -4,7 +4,7 @@ This project stores a ready-to-use implementation of Convention-over-Git.
 
 ## The Announcement
 
-A performance improvement update is coming.<br/>
+A crucial performance improvement update is coming.<br/>
 Also it includes some bug fixes and eternal struggle with a GitLab model of thinking.
 
 ## How to use
