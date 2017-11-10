@@ -48,7 +48,6 @@ if [[ ! -f "$env_repo_1_url/config" ]]; then
 fi
 
 cd "$env_repo_1_url"
-export env_must_exist_commit=$(git rev-list --max-parents=0 HEAD)
 
 
 

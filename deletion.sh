@@ -27,14 +27,14 @@ if [[ $deletion_allowed = 1 ]]; then
 
   not_existing_commit=0
   cd "$env_repo_1_path"
-  git show $env_must_exist_commit &> /dev/null || not_existing_commit=1
+  git show $must_exist_commit &> /dev/null || not_existing_commit=1
   cd "$env_repo_2_path"
-  git show $env_must_exist_commit &> /dev/null || not_existing_commit=1
+  git show $must_exist_commit &> /dev/null || not_existing_commit=1
 
   if [[ $not_existing_commit = 1 ]]; then
     echo '@' '!!!! Deletion & recovering blocked'
     echo '@' '!!!! A "must exist commit" does not exist on both repos.'
-    echo '@' '!!!! ' $must_exist_commit
+    echo '@' '!!!! ' must_exist_commit = '"'$must_exist_commit'"'
     
     deletion_allowed=0
   fi

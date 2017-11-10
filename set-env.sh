@@ -24,8 +24,6 @@ else
     
     # Some branch that must exist on both sides.
     export env_must_exist_branch=stand/prod
-    # Some commit that must exist on both sides.
-    export env_must_exist_commit=eb6fd83632a9a3a9a40c4d060a1851dadb9dd9c6
   else
     source "$invoke_path"/sample-init.sh
   fi
