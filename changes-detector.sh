@@ -1,6 +1,6 @@
 
-repo1_refs=$(git ls-remote --heads --tags "$env_repo_1_url" | sort)
-repo2_refs=$(git ls-remote --heads --tags "$env_repo_2_url" | sort)
+repo1_refs=$(git ls-remote --heads "$env_repo_1_url" $env_remote_1_key/* $env_remote_2_key/* | sort)
+repo2_refs=$(git ls-remote --heads "$env_repo_2_url" $env_remote_1_key/* $env_remote_2_key/* | sort)
 
 if [[ "$repo1_refs" = "$repo2_refs" ]];
 then

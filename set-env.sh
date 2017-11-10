@@ -30,22 +30,18 @@ else
     source "$invoke_path"/sample-init.sh
   fi
 
-  export env_fetch_refspec=("+refs/heads/*:refs/heads/*" \
-    "+refs/tags/*:refs/tags/*")
+  export env_fetch_refspec=("+refs/heads/*:refs/heads/*" )
 
-  export env_push_repo1_sync_del_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
-    "refs/tags/$env_remote_1_key/*:refs/tags/$env_remote_1_key/*")
-  export env_push_repo2_sync_del_restore_refspec=("refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*" \
-    "refs/tags/$env_remote_2_key/*:refs/tags/$env_remote_2_key/*")
+  export env_push_repo1_sync_del_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
+  export env_push_repo2_sync_del_restore_refspec=("refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
-  export env_repo1_conflict_resolving_push_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
-    "+refs/tags/$env_remote_1_key/*:refs/tags/$env_remote_1_key/*")
-  export env_repo2_conflict_resolving_push_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*" \
-    "+refs/tags/$env_remote_2_key/*:refs/tags/$env_remote_2_key/*")
+  export env_repo1_conflict_resolving_push_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
+  export env_repo2_conflict_resolving_push_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
-  export env_repos_roop_path="$env_git_sync/sync-repos"
-  export env_repo_1_path="$env_repos_roop_path/$env_repo_key/sync/$env_remote_1_key"
-  export env_repo_2_path="$env_repos_roop_path/$env_repo_key/sync/$env_remote_2_key"
+  export env_all_repos_root_path="$env_git_sync/sync-repos"
+  export env_repo_root_path="$env_all_repos_root_path/$env_repo_key"
+  export env_repo_1_path="$env_repo_root_path/sync/$env_remote_1_key"
+  export env_repo_2_path="$env_repo_root_path/sync/$env_remote_2_key"
 fi
 
 export set_env_git_sync=1
