@@ -14,7 +14,7 @@ changed_refs=$(awk -f "$env_git_sync/changed_refs.awk" <(echo "$repo1_refs"; ech
 
 
 echo
-echo ------------------ Changed refs: ----------------
+echo ------------------ Changed refs: ------------------
 echo "$changed_refs"
 echo ___________________________________________________
 

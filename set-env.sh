@@ -6,12 +6,9 @@ echo Start `basename "$BASH_SOURCE"`
 if [[ -n ${set_env_git_sync+x} ]]; then
   echo '(git-sync)' Already initialized
 else
-  # The $invoke_path comes from an external script.
-  export env_git_sync="$invoke_path"
-
-
   export env_repo_key=$1
   export env_workspace="$PWD"
+  
 
   export env_remote_1_key=repo_1
   export env_remote_2_key=repo_2
@@ -36,6 +33,10 @@ else
 
   export env_repo1_conflict_resolving_push_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
   export env_repo2_conflict_resolving_push_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
+
+
+  # The $invoke_path comes from an external script.
+  export env_git_sync="$invoke_path"
 
   export env_all_repos_root_path="$env_git_sync/sync-repos"
   export env_repo_root_path="$env_all_repos_root_path/$env_repo_key"
