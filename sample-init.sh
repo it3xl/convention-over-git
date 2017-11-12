@@ -1,4 +1,6 @@
 
+echo Start `basename "$BASH_SOURCE"`
+
 export env_repo_1_url="$env_git_sync/sample_repos/remote_$env_remote_1_key"
 export env_repo_2_url="$env_git_sync/sample_repos/remote_$env_remote_2_key"
 
@@ -47,8 +49,7 @@ if [[ ! -f "$env_repo_1_url/config" ]]; then
 
 fi
 
-cd "$env_repo_1_url"
-
+echo End `basename "$BASH_SOURCE"`
 
 
 

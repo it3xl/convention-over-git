@@ -1,4 +1,4 @@
-
+echo
 echo Start `basename "$BASH_SOURCE"`
 
 [[ $# -eq 0 ]] && { echo The \"repo name\" parameter is empty. Exit.; exit 1; }

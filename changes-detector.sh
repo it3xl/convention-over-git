@@ -1,6 +1,6 @@
 
-repo1_refs=$(git ls-remote --heads "$env_repo_1_url" $env_remote_1_key/* $env_remote_2_key/* | sort)
-repo2_refs=$(git ls-remote --heads "$env_repo_2_url" $env_remote_1_key/* $env_remote_2_key/* | sort)
+repo1_refs=$(git ls-remote --heads "$env_repo_1_url" $env_remote_1_key/* $env_remote_2_key/*)
+repo2_refs=$(git ls-remote --heads "$env_repo_2_url" $env_remote_1_key/* $env_remote_2_key/*)
 
 if [[ "$repo1_refs" = "$repo2_refs" ]];
 then
@@ -9,15 +9,14 @@ then
   exit
 fi
 
+changed_refs=$(awk -f "$env_git_sync/changed_refs.awk" <(echo "$repo1_refs"; echo "$repo2_refs"))
 
-repo1_prepared_refs=$(echo "$repo1_refs" | sed -r -e 's/\srefs\// /' -e 's/([^ ]+) +(.+)/\2 \t \1/' | sort)
-repo2_prepared_refs=$(echo "$repo2_refs" | sed -r -e 's/\srefs\// /' -e 's/([^ ]+) +(.+)/\2 \t \1/' | sort)
+
 
 echo
-echo ------------------ Different refs: ----------------
-comm -3 --output-delimiter= --nocheck-order <(echo "$repo1_prepared_refs") <(echo "$repo2_prepared_refs")
+echo ------------------ Changed refs: ----------------
+echo "$changed_refs"
 echo ___________________________________________________
 
-echo
 
 
