@@ -13,6 +13,19 @@ bash "$env_git_sync"/repo-create.sh "$env_repo_2_path"
 
 source "$env_git_sync"/changes-detector.sh
 
+declare -a fetch_refs;
+declare -a sync_refs;
+#declare -A resolve_refs;
+for r in $changed_refs; do
+  fetch_refs+=("+$r:$r");
+  sync_refs+=("$r:$r");
+  #resolve_refs+=('"%s" ' "+$r:$r");
+done
+
+echo
+echo fetch_refs "${fetch_refs[@]}"
+
+
 
 # Must use the source command here because it's impossible in bash to export array variables to subscripts.
 source "$env_git_sync"/fetching.sh
