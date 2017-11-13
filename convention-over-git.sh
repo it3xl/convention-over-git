@@ -23,9 +23,9 @@ source "$env_git_sync"/deletion.sh
 echo
 echo '@ Sync, recovering, deletion. Fast-forward. Conventional refs'
 cd "$env_repo_1_path"
-git push $prune_expr "$env_repo_2_url" "${env_push_repo1_sync_del_restore_refspec[@]}" || true
+git push $prune_expr "$env_repo_2_url" "${env_sync_del_restore_refspec[@]}" || true
 cd "$env_repo_2_path"
-git push $prune_expr "$env_repo_1_url" "${env_push_repo2_sync_del_restore_refspec[@]}" || true
+git push $prune_expr "$env_repo_1_url" "${env_sync_del_restore_refspec[@]}" || true
 
 
 source "$env_git_sync"/fetching.sh

@@ -28,8 +28,8 @@ else
   export env_fetch_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
     "+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
-  export env_push_repo1_sync_del_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
-  export env_push_repo2_sync_del_restore_refspec=("refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
+  export env_sync_del_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
+    "refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
   export env_repo1_conflict_resolving_push_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
   export env_repo2_conflict_resolving_push_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
