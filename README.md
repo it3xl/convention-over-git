@@ -14,8 +14,9 @@ $ ./**convention-over-git.sh**  your_any_repo_name
 
 **Windows** users have to use Git Bash that comes with any Git installation.
 
-In the **sample_repos** folder, you will find prepared local and remote repositories.
-Commit somthing to "local repositories" or merge and run the **convention-over-git.sh** script
+In the **sample_repos** folder, you will find prepared (emulated) local and remote repositories.
+Commit somthing or do a merge in the "local repositories" and push.
+Then run the **convention-over-git.sh** script again to see changes migrated between remote repositories.
 
 ## What is this all about!
 
