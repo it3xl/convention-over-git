@@ -60,8 +60,4 @@ if [[ $deletion_allowed = 1 ]]; then
 fi
 
 
-prune_expr=''
-if [[ $deletion_allowed = 1 ]]; then
-  prune_expr='--prune'
-fi
 

@@ -28,11 +28,14 @@ else
   export env_fetch_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
     "+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
-  export env_sync_del_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
+  export env_del_repo1_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
+  export env_del_repo2_refspec=("refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
+
+  export env_sync_restore_refspec=("refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \
     "refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
-  export env_repo1_conflict_resolving_push_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
-  export env_repo2_conflict_resolving_push_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
+  export env_resolv_repo1_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*")
+  export env_resolv_repo2_refspec=("+refs/heads/$env_remote_2_key/*:refs/heads/$env_remote_2_key/*")
 
 
   # The $invoke_path comes from an external script.
