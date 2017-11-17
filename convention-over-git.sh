@@ -35,9 +35,9 @@ fi
 echo
 echo '@ Sync & recovering. Fast-forward. Conventional refs'
 cd "$env_repo_1_path"
-git push $prune_expr "$env_repo_2_url" "${env_sync_restore_refspec[@]}" || true
+git push "$env_repo_2_url" "${env_sync_restore_refspec[@]}" || true
 cd "$env_repo_2_path"
-git push $prune_expr "$env_repo_1_url" "${env_sync_restore_refspec[@]}" || true
+git push "$env_repo_1_url" "${env_sync_restore_refspec[@]}" || true
 
 
 source "$env_git_sync"/fetching.sh
