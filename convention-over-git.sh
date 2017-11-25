@@ -7,8 +7,8 @@ invoke_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source "$invoke_path"/set-env.sh "$@"
 
 echo
-"$env_git_sync"/repo-create.sh "$env_repo_1_path"
-"$env_git_sync"/repo-create.sh "$env_repo_2_path"
+bash "$env_git_sync"/repo-create.sh "$env_repo_1_path"
+bash "$env_git_sync"/repo-create.sh "$env_repo_2_path"
 
 
 source "$env_git_sync"/changes-detector.sh

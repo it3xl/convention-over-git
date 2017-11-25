@@ -10,7 +10,7 @@ Also later I will publish an additiona project with significant performance cons
 ## How to use
 
 In a bash console navigate to the project's root folder and run the script<br/>
-$ ./**convention-over-git.sh**  your_any_repo_name
+$ bash **convention-over-git.sh**  your_any_repos_nickname
 
 **Windows** users have to use Git Bash that comes with any Git installation.
 
