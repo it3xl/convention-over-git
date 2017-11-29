@@ -1,9 +1,9 @@
 echo
 
-cd "$env_repo_1_path"
-echo '@' fetch $env_remote_1_key
-git fetch --prune "$env_repo_1_url" "${env_fetch_refspec[@]}"
+cd "$path_1"
+echo '@' fetch $prefix_1
+git fetch --prune "$url_1" "${refspec_fetch[@]}"
 
-cd "$env_repo_2_path"
-echo '@' fetch $env_remote_2_key
-git fetch --prune "$env_repo_2_url" "${env_fetch_refspec[@]}"
+cd "$path_2"
+echo '@' fetch $prefix_2
+git fetch --prune "$url_2" "${refspec_fetch[@]}"

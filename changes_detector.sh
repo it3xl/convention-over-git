@@ -1,6 +1,6 @@
 
-repo1_refs=$(git ls-remote --heads "$env_repo_1_url" $env_remote_1_key/* $env_remote_2_key/*)
-repo2_refs=$(git ls-remote --heads "$env_repo_2_url" $env_remote_1_key/* $env_remote_2_key/*)
+repo1_refs=$(git ls-remote --heads "$url_1" $prefix_1/* $prefix_2/*)
+repo2_refs=$(git ls-remote --heads "$url_2" $prefix_1/* $prefix_2/*)
 
 if [[ "$repo1_refs" = "$repo2_refs" ]];
 then
@@ -9,7 +9,7 @@ then
   exit
 fi
 
-changed_refs=$(awk -f "$env_git_sync/changed_refs.awk" <(echo "$repo1_refs"; echo "$repo2_refs"))
+changed_refs=$(awk -f "$path_git_sync/changed_refs.awk" <(echo "$repo1_refs"; echo "$repo2_refs"))
 
 
 

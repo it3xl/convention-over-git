@@ -1,27 +1,27 @@
 
 echo Start `basename "$BASH_SOURCE"`
 
-export env_repo_1_url="$env_git_sync/sample_repos/remote_$env_remote_1_key"
-export env_repo_2_url="$env_git_sync/sample_repos/remote_$env_remote_2_key"
+export url_1="$path_git_sync/sample_repos/remote_$prefix_1"
+export url_2="$path_git_sync/sample_repos/remote_$prefix_2"
 
-export env_repo_1_local="$env_git_sync/sample_repos/local_$env_remote_1_key"
-export env_repo_2_local="$env_git_sync/sample_repos/local_$env_remote_2_key"
+url_local_1="$path_git_sync/sample_repos/local_$prefix_1"
+url_local_2="$path_git_sync/sample_repos/local_$prefix_2"
 
-first_branch=$env_remote_1_key/production
-second_branch=$env_remote_2_key/develop
+first_branch=$prefix_1/production
+second_branch=$prefix_2/develop
 
-export env_must_exist_branch=$first_branch
+export must_exist_branch=$first_branch
 
 
-if [[ ! -f "$env_repo_1_url/config" ]]; then
+if [[ ! -f "$url_1/config" ]]; then
   
-  mkdir -p "$env_repo_1_url"
-  cd "$env_repo_1_url"
+  mkdir -p "$url_1"
+  cd "$url_1"
   git init --bare
   git symbolic-ref HEAD refs/heads/$first_branch
 
-  git clone "$env_repo_1_url" "$env_repo_1_local"
-  cd "$env_repo_1_local"
+  git clone "$url_1" "$url_local_1"
+  cd "$url_local_1"
   git checkout -b $first_branch
   touch .gitignore
   
@@ -35,12 +35,12 @@ if [[ ! -f "$env_repo_1_url/config" ]]; then
   
   git push --all "origin"
   
-  cp -r "$env_repo_1_url"/ "$env_repo_2_url"/
-  cd "$env_repo_2_url"
+  cp -r "$url_1"/ "$url_2"/
+  cd "$url_2"
   git symbolic-ref HEAD refs/heads/$second_branch
   
-  git clone "$env_repo_2_url" "$env_repo_2_local"
-  cd "$env_repo_2_local"
+  git clone "$url_2" "$url_local_2"
+  cd "$url_local_2"
 
   echo other test file >> other_test_file.txt
   git add --all
