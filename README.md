@@ -9,14 +9,25 @@ Also later I will publish an additiona project with significant performance cons
 
 ## How to use
 
-In a bash console navigate to the project's root folder and run the script<br/>
-$ bash **run.sh**  your_any_repos_nickname
+In a terminal (console) navigate to the project's root folder and run the script<br/>
+$ bash **run.sh**
 
 **Windows** users have to use Git Bash that comes with any Git installation.
 
-In the **sample_repos** folder, you will find prepared (emulated) local and remote repositories.
-Commit somthing or do a merge in the "local repositories" and push.
-Then run the **convention-over-git.sh** script again to see changes migrated between remote repositories.
+In a **sample_repos** folder, you will find prepared (emulated) local and remote repositories with some commits and branches.
+Commit somthing or do a merge in the "local repositories" and do the Git push.
+Then run<br/>
+`$ bash **run.sh**`<br/>
+again to see changes migrated between remote repositories.
+
+## Use in Production
+
+Go to **repo_settings** folder and create there a file with your syncing repositories settings.<br/>
+Use **sample_repo.sh** file as an example.
+
+Then run
+
+$ bash **run.sh** your_file_for_repo_settings.sh
 
 ## What is this all about!
 
