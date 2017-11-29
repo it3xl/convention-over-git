@@ -13,10 +13,11 @@ run_sample=0
   file_name_project_env="sample_repo.sh"
 }
 
-file_project_env="$invoke_path/project_env/$file_name_project_env"
+folder_name_repo_settings=repo_settings
+file_project_env="$invoke_path/$folder_name_repo_settings/$file_name_project_env"
 if [[ ! -f "$file_project_env" ]]; then
-  echo "Error. The first parameter must be a name of a file from the folder project_env."
-  echo "See an example how to fill it with project's environment variables."
+  echo "Error. The first parameter must be a name of a file from the folder $folder_name_repo_settings."
+  echo "See an example how to fill it with repo's environment variables."
   exit 1;
 fi
 

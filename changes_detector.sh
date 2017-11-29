@@ -4,6 +4,7 @@ repo2_refs=$(git ls-remote --heads "$url_2" $prefix_1/* $prefix_2/*)
 
 if [[ "$repo1_refs" = "$repo2_refs" ]];
 then
+  echo
   echo Refs are the same. Exit.
   
   exit
