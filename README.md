@@ -1,6 +1,6 @@
 # Convention-over-Git
 
-This project stores a ready-to-use implementation of an idea of Convention-over-Git.
+This project stores a ready-to-use implementation for an idea of [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).
 
 ## The Announcement
 
@@ -9,25 +9,30 @@ Also later I will publish an additiona project with significant performance cons
 
 ## How to use
 
-In a terminal (console) navigate to the project's root folder and run the script<br/>
-$ bash **run.sh**
+In a terminal (console) navigate to the project's root folder and run the script
+
+`bash **run.sh**`
 
 **Windows** users have to use Git Bash that comes with any Git installation.
 
-In a **sample_repos** folder, you will find prepared (emulated) local and remote repositories with some commits and branches.
-Commit somthing or do a merge in the "local repositories" and do the Git push.
-Then run<br/>
-`$ bash **run.sh**`<br/>
+In **sample_repos** folder, you will find prepared (emulated) local and remote repositories with some commits and branches.
+Commit somthing or do a merge in any "local repository" and do the Git push.
+Then run
+
+`bash run.sh`
+
 again to see changes migrated between remote repositories.
 
 ## Use in Production
 
-Go to **repo_settings** folder and create there a file with your syncing repositories settings.<br/>
+Go to **repo_settings** folder and create there a file with your syncing repositories' settings.<br/>
 Use **sample_repo.sh** file as an example.
 
 Then run
 
-$ bash **run.sh** your_file_for_repo_settings.sh
+`bash **run.sh** your_file_for_repo_settings.sh`
+
+Repeat this run when you want to synchronize your remote repositories.
 
 ## What is this all about!
 
