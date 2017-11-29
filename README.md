@@ -4,7 +4,7 @@ This project stores a ready-to-use implementation for an idea of [Convention-ove
 
 ## The Announcement
 
-An update is coming with some some bug fixing.
+An update is coming with some bug fixing.
 Also later I will publish an additional project with significant performance considerations.
 
 ## How to use
