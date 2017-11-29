@@ -26,7 +26,7 @@ else
     # Some branch that must exist on both sides.
     export env_must_exist_branch=stand/prod
   else
-    source "$invoke_path"/sample-init.sh
+    source "$invoke_path"/sample_init.sh
   fi
 
   export env_fetch_refspec=("+refs/heads/$env_remote_1_key/*:refs/heads/$env_remote_1_key/*" \

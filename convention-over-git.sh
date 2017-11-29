@@ -4,14 +4,14 @@ echo
 echo Start `basename $0`
 
 invoke_path="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-source "$invoke_path"/set-env.sh "$@"
+source "$invoke_path"/set_env.sh "$@"
 
 echo
-bash "$env_git_sync"/repo-create.sh "$env_repo_1_path"
-bash "$env_git_sync"/repo-create.sh "$env_repo_2_path"
+bash "$env_git_sync"/repo_create.sh "$env_repo_1_path"
+bash "$env_git_sync"/repo_create.sh "$env_repo_2_path"
 
 
-source "$env_git_sync"/changes-detector.sh
+source "$env_git_sync"/changes_detector.sh
 
 
 # Must use the source command here because it's impossible in bash to export array variables to subscripts.
