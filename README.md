@@ -11,7 +11,7 @@ Also later I will publish an additiona project with significant performance cons
 
 In a terminal (console) navigate to the project's root folder and run the script
 
-`bash **run.sh**`
+`bash run.sh`
 
 **Windows** users have to use Git Bash that comes with any Git installation.
 
@@ -30,7 +30,7 @@ Use **sample_repo.sh** file as an example.
 
 Then run
 
-`bash **run.sh** your_file_for_repo_settings.sh`
+`bash run.sh your_file_for_repo_settings.sh`
 
 Repeat this run when you want to synchronize your remote repositories.
 
