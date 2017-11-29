@@ -1,13 +1,11 @@
 
 echo Start `basename "$BASH_SOURCE"`
 
-export url_1="$path_git_sync/sample_repos/remote_$prefix_1"
-export url_2="$path_git_sync/sample_repos/remote_$prefix_2"
 
 url_local_1="$path_git_sync/sample_repos/local_$prefix_1"
 url_local_2="$path_git_sync/sample_repos/local_$prefix_2"
 
-first_branch=$prefix_1/production
+first_branch=$must_exist_branch
 second_branch=$prefix_2/develop
 
 export must_exist_branch=$first_branch
