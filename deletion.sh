@@ -10,9 +10,9 @@ if [[ $deletion_allowed = 1 ]]; then
   lock_ref_1_repo2=$(git show-ref refs/heads/$must_exist_branch --hash) || true
 
   if [[ ( -z "$lock_ref_1_repo1" || "$lock_ref_1_repo1" != "$lock_ref_1_repo2") ]]; then
-    echo '@' '!!!! Deletion & recovering blocked'
-    echo '@' '!!!! "Must exist branches" do not exist or not equal.'
-    echo '@' '!!!! ' $must_exist_branch
+    echo '@  !!!! Deletion & recovering blocked'
+    echo '@@ !!!! "Must exist branches" do not exist or not equal.'
+    echo '@@ !!!! ' $must_exist_branch
 
     deletion_allowed=0
   fi
@@ -35,9 +35,9 @@ if [[ $deletion_allowed = 1 ]]; then
   git show $must_exist_commit &> /dev/null || not_existing_commit=1
 
   if [[ $not_existing_commit = 1 ]]; then
-    echo '@' '!!!! Deletion & recovering blocked'
-    echo '@' '!!!! A "must exist commit" does not exist on both repos.'
-    echo '@' '!!!! ' must_exist_commit = '"'$must_exist_commit'"'
+    echo '@  !!!! Deletion & recovering blocked'
+    echo '@@ !!!! A "must exist commit" does not exist on both repos.'
+    echo '@@ !!!! ' must_exist_commit = '"'$must_exist_commit'"'
     
     deletion_allowed=0
   fi
@@ -53,7 +53,7 @@ if [[ $deletion_allowed = 1 ]]; then
   sorted_refnames_repo2=$(echo "$repo2_refs" | sed 's/^.* //' | sort)
 
   if [[ "$sorted_refnames_repo1" = "$sorted_refnames_repo2" ]]; then
-    echo '@' 'Deletion & recovering disabled. All ref-names are the same.'
+    echo '@ Deletion & recovering disabled. All ref-names are the same.'
     
     deletion_allowed=0
   fi
