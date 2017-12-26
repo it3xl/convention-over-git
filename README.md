@@ -1,5 +1,6 @@
 # Convention-over-Git
 
+Automated synchronization of Git remote repositories.<br/>
 This project stores a ready-to-use implementation for an idea of [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).
 
 ## The Announcement
