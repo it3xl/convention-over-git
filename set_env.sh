@@ -46,17 +46,17 @@ export must_exist_branch
 }
 
 
-export refspec_fetch=("+refs/heads/$prefix_1/*:refs/heads/$prefix_1/*" \
-  "+refs/heads/$prefix_2/*:refs/heads/$prefix_2/*")
+export refspec_fetch=("+refs/heads/$prefix_1*:refs/heads/$prefix_1*" \
+  "+refs/heads/$prefix_2*:refs/heads/$prefix_2*")
 
-export refspec_del_1=("refs/heads/$prefix_1/*:refs/heads/$prefix_1/*")
-export refspec_del_2=("refs/heads/$prefix_2/*:refs/heads/$prefix_2/*")
+export refspec_del_1=("refs/heads/$prefix_1*:refs/heads/$prefix_1*")
+export refspec_del_2=("refs/heads/$prefix_2*:refs/heads/$prefix_2*")
 
-export refspec_sync=("refs/heads/$prefix_1/*:refs/heads/$prefix_1/*" \
-  "refs/heads/$prefix_2/*:refs/heads/$prefix_2/*")
+export refspec_sync=("refs/heads/$prefix_1*:refs/heads/$prefix_1*" \
+  "refs/heads/$prefix_2*:refs/heads/$prefix_2*")
 
-export refspec_solve_1=("+refs/heads/$prefix_1/*:refs/heads/$prefix_1/*")
-export refspec_solve_2=("+refs/heads/$prefix_2/*:refs/heads/$prefix_2/*")
+export refspec_solve_1=("+refs/heads/$prefix_1*:refs/heads/$prefix_1*")
+export refspec_solve_2=("+refs/heads/$prefix_2*:refs/heads/$prefix_2*")
 
 
 path_project_root="$path_git_sync/sync-repos/$project_folder"
