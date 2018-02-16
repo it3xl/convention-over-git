@@ -1,12 +1,10 @@
 # Convention-over-Git
 
 Automated synchronization of remote Git repositories by pure Git and [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).<br/>
-This project stores a ready-to-use implementation for an idea of [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).
 
-## The Announcement
+It is proven and tested solution.
 
-An update is coming with some bug fixing.
-Also later I will publish an additional project with significant performance considerations.
+Consider to use more advanced [git-sinc](https://github.com/it3xl/git-sync) solution.
 
 ## How to use
 
