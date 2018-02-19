@@ -6,6 +6,8 @@ It is proven and tested solution.
 
 Consider to use more advanced [git-sinc](https://github.com/it3xl/git-sync) solution.
 
+This approach uses well-known Git tools. It is because Git has an innate ability to do this. All we need to add is some convention.
+
 ## How to use
 
 In a terminal (console) navigate to the project's root folder and run the script
@@ -44,3 +46,24 @@ This approach uses well-known Git tools. It is because Git has an innate ability
 * [Day-to-day use or How-to](http://blog.it3xl.com/2017/09/convention-over-git-day-to-day-use.html)
 
 Also you can see code explanation in [Cheat-sheet for implementation](http://blog.it3xl.com/2017/09/convention-over-git-impl-cheat-sheet.html)
+
+## Glossary
+
+[Glossary](http://blog.it3xl.com/2018/02/glossary-of-synchronization-of-remote.html)
+
+## Features
+
+* Synchronizations of git-tags was eliminated to allow GitLab block them freelly.
+* It is impossible to delete branch of another side. Such branches will be restored.
+* Auto conflict resolving by [Convention over Git](http://blog.it3xl.com/2017/09/convention-over-git.html) (non-fast-forward branch conflicts).
+* Prevention of an occasional deletion of an entire repository.
+* Failover & auto recovery of synchronization. Especially for network troubles.
+* Solution is applied per-repository (vs per-server)
+* It has been downgraded here to use two remote Git repositories for clarity, but it can work with many.
+* Bare Git repositories are used for synchronization.
+
+## Limitations
+
+* Do only one commit to another side per the sinchronization interval.
+
+
