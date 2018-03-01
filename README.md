@@ -64,6 +64,6 @@ Also you can see code explanation in [Cheat-sheet for implementation](http://blo
 
 ## Limitations
 
-* Do only one commit to another side per the sinchronization interval.
+* Do only a single commit to another repository side per the sinchronization interval.
 
 
