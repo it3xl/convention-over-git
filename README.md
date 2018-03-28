@@ -1,4 +1,4 @@
-# Convention-over-Git
+# Pure Git with Convention over Git
 
 Automated synchronization of remote Git repositories by pure Git and [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).<br/>
 
