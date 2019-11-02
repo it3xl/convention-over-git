@@ -1,6 +1,6 @@
 # Pure Git with Convention over Git
 
-Automated synchronization of remote Git repositories by pure Git and [Convention-over-Git](http://blog.it3xl.com/2017/09/convention-over-git.html).<br/>
+Automated synchronization of remote Git repositories by pure Git and [Convention-over-Git](https://it3xl.blogspot.com/2017/09/convention-over-git.html).<br/>
 
 It is proven and tested solution.
 
@@ -42,20 +42,20 @@ Absolutely separate remote repositories will begin behave as a single remote rep
 
 This approach uses well-known Git tools. It is because Git has an innate ability to do this. All we need to add is some convention.
 
-* [The main idea](http://blog.it3xl.com/2017/09/convention-over-git.html)
-* [Day-to-day use or How-to](http://blog.it3xl.com/2017/09/convention-over-git-day-to-day-use.html)
+* [The main idea](https://it3xl.blogspot.com/2017/09/convention-over-git.html)
+* [Day-to-day use or How-to](https://it3xl.blogspot.com/2017/09/convention-over-git-day-to-day-use.html)
 
-Also you can see code explanation in [Cheat-sheet for implementation](http://blog.it3xl.com/2017/09/convention-over-git-impl-cheat-sheet.html)
+Also you can see code explanation in [Cheat-sheet for implementation](https://it3xl.blogspot.com/2017/09/convention-over-git-impl-cheat-sheet.html)
 
 ## Glossary
 
-[Glossary](http://blog.it3xl.com/2018/02/glossary-of-synchronization-of-remote.html)
+[Glossary](https://it3xl.blogspot.com/2018/02/glossary-of-synchronization-of-remote.html)
 
 ## Features
 
 * Synchronizations of git-tags was eliminated to allow GitLab block them freelly.
 * It is impossible to delete branch of another side. Such branches will be restored.
-* Auto conflict resolving by [Convention over Git](http://blog.it3xl.com/2017/09/convention-over-git.html) (non-fast-forward branch conflicts).
+* Auto conflict resolving by [Convention over Git](https://it3xl.blogspot.com/2017/09/convention-over-git.html) (non-fast-forward branch conflicts).
 * Prevention of an occasional deletion of an entire repository.
 * Failover & auto recovery of synchronization. Especially for network troubles.
 * Solution is applied per-repository (vs per-server)
