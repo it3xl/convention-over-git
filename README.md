@@ -2,7 +2,9 @@
 
 Automated synchronization of remote Git repositories by pure Git and [Convention-over-Git](https://it3xl.blogspot.com/2017/09/convention-over-git.html).<br/>
 
+----
 ### Consider to use [git-repo-sync](https://github.com/it3xl/git-repo-sync), the next generation of remote Git repositories synchronization solutions.
+----
 
 This approach uses well-known Git tools. It is because Git has an innate ability to do this. All we need to add is some convention.
 
